@@ -24,7 +24,8 @@ export function useIPValidation(): IPValidationResult {
     const validateIP = async () => {
       try {
         // Récupérer la liste des IPs approuvées
-        const approvedIPsString = process.env.N8N_WEBHOOK_IP_APPROUV;
+        const approvedIPsString =
+          process.env.NEXT_PUBLIC_N8N_WEBHOOK_IP_APPROUV;
 
         console.log("[IP VALIDATION] IPs autorisées:", approvedIPsString);
 
