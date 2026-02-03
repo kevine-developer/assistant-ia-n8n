@@ -35,25 +35,25 @@ const WORKFLOWS: Workflow[] = [
   {
     id: "job-offer",
     name: "Offre d'emploi",
-    webhook: process.env.N8N_WEBHOOK_JOB_OFFER || "",
+    webhook: process.env.NEXT_PUBLIC_N8N_WEBHOOK_JOB_OFFER || "",
     icon: Briefcase,
   },
   {
     id: "social-content",
     name: "Contenu réseaux",
-    webhook: process.env.N8N_WEBHOOK_SOCIAL_CONTENT || "",
+    webhook: process.env.NEXT_PUBLIC_N8N_WEBHOOK_SOCIAL_CONTENT || "",
     icon: Share2,
   },
   {
     id: "idea-improvement",
     name: "Amélioration d'idée",
-    webhook: process.env.N8N_WEBHOOK_IDEA_IMPROVEMENT || "",
+    webhook: process.env.NEXT_PUBLIC_N8N_WEBHOOK_IDEA_IMPROVEMENT || "",
     icon: Lightbulb,
   },
 ];
 
-const AUTH_USERNAME = process.env.N8N_AUTH_USERNAME || "";
-const AUTH_PASSWORD = process.env.N8N_AUTH_PASSWORD || "";
+const AUTH_USERNAME = process.env.NEXT_PUBLIC_N8N_AUTH_USERNAME || "";
+const AUTH_PASSWORD = process.env.NEXT_PUBLIC_N8N_AUTH_PASSWORD || "";
 
 export function ChatWidget() {
   const [messages, setMessages] = useState<Message[]>([]);

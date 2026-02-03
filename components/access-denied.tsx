@@ -1,4 +1,3 @@
-
 import { AlertCircle, Lock } from "lucide-react";
 
 interface AccessDeniedProps {
